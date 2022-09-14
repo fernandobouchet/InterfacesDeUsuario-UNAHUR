@@ -19,6 +19,10 @@ header,
   color: black;
 }
 
+.nav-link {
+  color:white;
+}
+
 a,
 a:visited {
   color: white;
