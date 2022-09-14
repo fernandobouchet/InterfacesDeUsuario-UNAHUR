@@ -5,10 +5,187 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noticias</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
   </head>
   <body>
-    <h1>Noticias</h1>
+    <header>
+      <h1>Noticias Deportivas</h1>
+      <nav>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fútbol Argentino</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fútbol Internacional</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Agenda</a>
+          </li>
+          <li class="nav-link">
+            <button class="nav-item" id="toggle"></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="assets/carousel1.jpg"
+            class="d-block w-100"
+            alt="Imagen de Haaland y Lewandowski"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-info">
+              Lewandowski y Haaland, entre el morbo y la ley del ex
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/carousel2.jpg"
+            class="d-block w-100"
+            alt="Imagen de Cardona y Miranda"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-info">
+              Bomba en Racing: Gago colgó a Cardona y Miranda
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/carousel3.jpg"
+            class="d-block w-100"
+            alt="Imagen de Cristiano Ronaldo"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-info">
+              La oferta de 242 millones que rechazó Cristiano Ronaldo
+            </h5>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <main class="container">
+      <section>
+        <article id="noticia1" class="article-hover">
+          <h2>No está terminado, River</h2>
+          <div>
+            <img src="assets/noticia1.jpg" alt="Imagen de River derrotado" />
+            <p>
+              La derrota en la Boca puede marcar un punto de inflexión. El
+              miércoles contra Banfield y el domingo ante San Lorenzo el equipo
+              debe dar muestras de haberse levantado.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section>
+        <article class="article-hover">
+          <h2>La tabla para las copas 2023</h2>
+          <div>
+            <img src="assets/noticia2.jpg" alt="Logo de la copa Libertadores" />
+            <p>
+              Con Boca ya en Libertadores, mirá cómo está la tabla anual que
+              dará cupos para las copas del año que viene.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section>
+        <article class="article-hover">
+          <h2>
+            Los nueve partidos que le quedan a River para soñar con la LPF
+          </h2>
+          <img
+            src="assets/noticia3.jpg"
+            alt="Imagen de Marcelo Gallardo, Tecnico de River Plate"
+          />
+          <p>
+            A pesar de la derrota en el superclásico, el equipo de Gallardo
+            sigue vivo en el campeonato: está a cinco puntos de Atlético
+            Tucumán...
+          </p>
+        </article>
+      </section>
+    </main>
+    <section id="info">
+      <h3>Contacto</h3>
+      <div id="info-container">
+        <ul>
+          <li>Tel: 444-5555 / 1166-1234</li>
+          <li>Dirección: Calle Falsa 123 - Buenos Aires</li>
+          <li>Whatsapp: 11-6565-5555</li>
+          <li>Email: noticiasfutbol@deportes.com</li>
+        </ul>
+        <div id="redes-sociales">
+          <p>Seguinos en nuestras redes sociales:</p>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>TikTok</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer><span>Noticias deportivas 2022</span></footer>
   </body>
 </html>

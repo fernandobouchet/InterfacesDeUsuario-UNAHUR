@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+  background-color: #171923;
+  color: #c5cddb;
+}
+
+header,
+#info {
+  display: flex;
+  flex-direction: column;
+  background-color: #94be1f;
+  color: white;
+  padding: 1rem 0;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+a,
+a:visited {
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+}
+
+h5 {
+  background-color: rgba(0, 0, 0, 0.534);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem;
+}
+.article-hover {
+  transition-duration: 500ms;
+}
+.article-hover:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+img {
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+
+#carouselExampleCaptions {
+  width: 70%;
+  height: auto;
+  margin: 1rem auto;
+}
+
+p {
+  font-size: calc(13px + 0.2vw);
+}
+
+a {
+  font-size: calc(8px + 0.9vw);
+}
+
+.carousel-info {
+  cursor: pointer;
+}
+
+ul {
+  align-items: center;
+}
+
+#toggle {
+  background-size: contain;
+  border: none;
+  width: fit-content;
+  background: url('./assets/icons/dark_mode.png') no-repeat;
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+  padding: 0.5rem 1rem;
+}
+
+.toggle-light {
+  background: url('./assets/icons/light_mode.png') no-repeat !important;
+}
+
+p {
+  width: 70%;
+  text-align: justify;
+  margin: 1rem auto;
+}
+
+h2 {
+  max-width: 60%;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+h3 {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  height: 1rem;
+}
+
+span {
+  font-size: calc(4px + 1vw);
+}
+ul {
+  list-style: none;
+}
+#info-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: calc(6px + 1vw);
+}
+
+#redes-sociales > p {
+  font-size: calc(6px + 1vw);
+  width: auto;
+  margin: 0;
+}
+#redes-sociales > ul {
+  padding: 0;
+  cursor: pointer;
+  width: fit-content;
+}
+#redes-sociales > ul > li:hover {
+  margin-bottom: -1px;
+  border-bottom: 1px solid;
+}
